@@ -15,7 +15,7 @@ test('renders propertly', () => {
   expect(screen.getByLabelText('gender')).toBeInTheDocument();
   expect(screen.getByRole('button')).toBeInTheDocument();
 })
-  it("should enter a new character name when type in name and called onChange callback", async () => {
+  it("should enter a new character name,status,gender and called onChange callback", async () => {
     render(<Home/>);
     const name = screen.getByLabelText('name');
     const status = screen.getByLabelText('status');
